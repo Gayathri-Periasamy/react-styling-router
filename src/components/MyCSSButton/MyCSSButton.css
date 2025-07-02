@@ -1,0 +1,49 @@
+.button-group {
+  display: flex;
+  flex-direction: column; /* Stack vertically by default (mobile) */
+  gap: 1rem; /* Spacing between buttons */
+}
+
+.button{
+    background-color: black;
+    color: white;
+    font-size: 14px; 
+    font-weight:bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width:100;
+
+}
+
+.button:hover{
+    background-color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow on mobile */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.disabled {
+  background-color: grey;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row; /* Side by side on desktop */
+  }
+
+  .button-group button {
+    width: auto;
+    font-size: 18px; /* Larger size for desktop */
+    padding:0.75rem 1.5rem;
+
+  }
+  .button-group button:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on desktop */
+  }
+}
+
+
+
