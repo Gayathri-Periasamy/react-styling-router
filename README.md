@@ -75,8 +75,8 @@ This project demonstrates two different ways to style your React components:
 1. Create Button Components
    - Create a new folder called `components` inside the `src` directory
    - Define two React components:
-     - `MyCSSButton`: A button styled with traditional CSS
-     - `MyTailwindButton`: A button styled with Tailwind CSS
+     - `MyCSSButton`
+     - `MyTailwindButton`
    - The text of one button should be 'Tailwind Button' and the other button should say 'CSS button'
 
 2. Use the Buttons
@@ -284,6 +284,18 @@ export default App;
    - Add a link in the navigation
    - Move the buttons you created  to this page so that they don't appear in the other pages (also called routes)
 
+
+
+5. Add Dynamic Routes
+   - Create a route with parameters: `/hello/:name`
+   - Display a personalized greeting
+   - Style the page with Tailwind CSS
+
+6. Add a 404 Page
+   - Create a catch-all route for unmatched paths
+   - Style it with Tailwind CSS
+   - Add a link back to home
+
 #### Learning Objectives
 This exercise will help you understand:
 - Client-side routing concepts
@@ -294,20 +306,139 @@ This exercise will help you understand:
 - 404 handling
 
 
+LASTLY: <span style="color: red">Create a Pull Request</span>
+
+This task is important to practice Git and GitHub workflow. Follow these steps:
+
+0. FORK THE REPO 
 
 
-### Optional Tasks (For Faster Students)
+Sure! Here's a clean and student-friendly Markdown block you can paste directly into a `README.md`:
+
+---
+
+## 🛠️ How to Push to Your Fork (if You Cloned the Original Repo by Accident)
+
+If you cloned the original repo and already created a branch with your solution — no worries! You can still push your branch to your own fork and make a pull request.
+
+### ✅ Steps
+
+1. **Fork this repo** on GitHub
+   Click the **"Fork"** button in the top-right corner of the repository page.
+
+2. **In your terminal, point your local repo to your fork**
+   Run this in the folder where you already cloned the repo:
+
+   ```bash
+   git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git
+   ```
+
+   Replace `YOUR-USERNAME` and `YOUR-FORK-NAME` with your GitHub username and the name of your forked repo.
+
+3. **Check that it worked**:
+
+   ```bash
+   git remote -v
+   ```
+
+   It should show:
+
+   ```
+   origin  https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git (fetch)
+   origin  https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git (push)
+   ```
+
+4. **Push your branch to your fork**:
+
+   ```bash
+   git push origin your-branch-name
+   ```
+
+5. **Open a Pull Request**
+   Go to your fork on GitHub, and GitHub will show a **"Compare & pull request"** button. Click it and submit your PR! 🎉
+
+---
+
+Let me know if you want a version with screenshots or a `.md` file download!
 
 
-1. Add Dynamic Routes
-   - Create a route with parameters: `/hello/:name`
-   - Display a personalized greeting
-   - Style the page with Tailwind CSS
 
-2. Add a 404 Page
-   - Create a catch-all route for unmatched paths
+1. Stage your changes:
+   ```bash
+   git add .
+   ```
+
+2. Commit your changes with a descriptive message:
+   ```bash
+   git commit -m "Add routing and styling features"
+   ```
+
+3. Push your changes to GitHub:
+   ```bash
+   git push origin main
+   ```
+
+4. Create a Pull Request:
+   - Go to your GitHub repository
+   - Click on "Pull requests"
+   - Click "New pull request"
+   - Write a title like "Add routing and styling features"
+   - Add a description of your changes
+   - Click "Create pull request"
+
+This will help you practice:
+- Basic Git commands
+- GitHub workflow
+- Code review process
+- Project collaboration
+
+### Fun Optional Challenges
+
+#### Styling Challenges
+
+1. Create a Simple Navigation Menu
+   - Style the navigation links with hover effects
+   - Add a subtle underline animation
+   - Make the active link stand out
+   - Make it responsive for mobile screens
+   - Add a simple transition when switching pages
+
+2. Build a Simple Card Component
+   - Create a reusable card component
+   - Add hover effects (slight lift and shadow)
+   - Make it responsive
+   - Add different color variants
+   - Include an image with proper aspect ratio
+
+3. Add Some Fun Animations
+   - Add a loading spinner
+   - Create a simple fade-in effect for pages
+   - Add a button click animation
+   - Make the header text animate on page load
+   - Add a simple hover effect to images
+
+#### Wouter Challenges
+
+1. Create a Simple User Profile Page
+   - Add a `/profile` route
+   - Create a simple profile page with user info
+   - Add a link to it in the navigation
    - Style it with Tailwind CSS
-   - Add a link back to home
+   - Add a simple form to update the profile
+
+2. Build a Simple Blog System
+   - Create a `/blog` route
+   - Add a list of blog posts
+   - Create individual post pages
+   - Add navigation between posts
+   - Style everything with Tailwind CSS
+
+3. More tasks: Add Some Fun Features like
+   - Create a simple search page
+   - Add a contact form page
+   - Create a simple photo gallery
+   - Add a "back to top" button
+   - Create a simple footer with links
 
 ### Quiz
 - Wait for the teacher's quiz about routing
@@ -319,3 +450,7 @@ This exercise will help you understand:
 - Test navigation between pages
 - Check that the back/forward browser buttons work
 - Verify that direct URL access works
+
+
+
+
